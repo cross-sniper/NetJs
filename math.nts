@@ -1,0 +1,12 @@
+fun("add","a","b","return a + b")
+fun("mul","a","b","return a * b")
+fun("div","a","b","return a / b")
+fun("sub","a","b","return a - b")
+fun("pow", "a", "b", "return Math.pow(a, b);") // calculates the power of a to b
+fun("sqrt", "a", "", "return Math.sqrt(a);") // calculates the square root of a
+fun("sin", "a", "", "return Math.sin(a);") // calculates the sine of a (in radians)
+fun("cos", "a", "", "return Math.cos(a);") // calculates the cosine of a (in radians)
+fun("tan", "a", "", "return Math.tan(a);") // calculates the tangent of a (in radians)
+fun("asin", "a", "", "return Math.asin(a);") // calculates the arcsine of a (in radians)
+fun("acos", "a", "", "return Math.acos(a);") // calculates the arccosine of a (in radians)
+fun("atan", "a", "", "return Math.atan(a);") // calculates the arctangent of a (in radians)

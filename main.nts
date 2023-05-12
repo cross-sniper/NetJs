@@ -1,0 +1,14 @@
+requires('math.nts');
+printf(add(20, 40)); // 60
+printf(sub(20, 40)); // -20
+printf(mul(20, 40)); // 800
+printf(div(20, 40)); // 0.5
+printf(pow(2, 3)); // 8
+printf(sqrt(25)); // 5
+printf(sin(Math.PI/2)); // 1
+printf(cos(Math.PI)); // -1
+printf(tan(Math.PI/4)); // 1
+printf(asin(1)); // 1.5707963267948966
+printf(acos(0)); // 1.5707963267948966
+printf(atan(1)); // 0.7853981633974483
+
