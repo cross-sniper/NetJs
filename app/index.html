@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NetJS Test</title>
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background-color: #f0f0f0;
+			font-family: Arial, sans-serif;
+		}
+
+		#editor {
+			background: darkgray;
+			width: 100%;
+			height: 80vh;
+			font-family: Consolas, monospace;
+			font-size: 14px;
+			border: none;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+
+		#console {
+			width: 100%;
+			height: 20vh;
+			background-color: #000;
+			color: #fff;
+			font-family: Consolas, monospace;
+			font-size: 14px;
+			border: none;
+			padding: 10px;
+			box-sizing: border-box;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			padding: 10px;
+			text-align: center;
+			text-decoration: none;
+			display: inline-block;
+			font-size: 14px;
+			margin: 5px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<!-- Script editor -->
+	<textarea id="editor" placeholder="Enter NetJS script here..."></textarea>
+
+	<!-- Console output -->
+	<textarea id="console" readonly></textarea>
+
+	<!-- Run button -->
+	<button id="run-btn">Run</button>
+
+	<script type="text/javascript" src="netjs.linker.js"></script>
+	<nts-j type="text/NetScript" src="script.nts"></nts-j>
+	<script type="text/javascript" src="netjs.js"></script>
+	<script>
+		// Get references to the editor and console elements
+		const editor = document.getElementById('editor');
+		const NetJSConsole = document.getElementById('console');
+
+		// Add an event listener to the Run button
+		document.getElementById('run-btn').addEventListener('click', () => {
+
+
+			// Get the code from the editor
+			const code = editor.value;
+			run(code);
+			
+		});
+	</script>
+</body>
+</html>
