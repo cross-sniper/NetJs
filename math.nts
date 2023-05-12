@@ -2,11 +2,20 @@ fun("add","a","b","return a + b")
 fun("mul","a","b","return a * b")
 fun("div","a","b","return a / b")
 fun("sub","a","b","return a - b")
-fun("pow", "a", "b", "return Math.pow(a, b);") // calculates the power of a to b
-fun("sqrt", "a", "", "return Math.sqrt(a);") // calculates the square root of a
-fun("sin", "a", "", "return Math.sin(a);") // calculates the sine of a (in radians)
-fun("cos", "a", "", "return Math.cos(a);") // calculates the cosine of a (in radians)
-fun("tan", "a", "", "return Math.tan(a);") // calculates the tangent of a (in radians)
-fun("asin", "a", "", "return Math.asin(a);") // calculates the arcsine of a (in radians)
-fun("acos", "a", "", "return Math.acos(a);") // calculates the arccosine of a (in radians)
-fun("atan", "a", "", "return Math.atan(a);") // calculates the arctangent of a (in radians)
+fun("pow", "a", "b", "return Math.pow(a, b)") // calculates the power of a to b
+fun("sqrt", "a", "return Math.sqrt(a)") // calculates the square root of a
+fun("sin", "a", "return Math.sin(a)") // calculates the sine of a (in radians)
+fun("cos", "a", "return Math.cos(a)") // calculates the cosine of a (in radians)
+fun("tan", "a", "return Math.tan(a)") // calculates the tangent of a (in radians)
+fun("asin", "a", "return Math.asin(a)") // calculates the arcsine of a (in radians)
+fun("acos", "a", "return Math.acos(a)") // calculates the arccosine of a (in radians)
+fun("atan", "a", "return Math.atan(a)") // calculates the arctangent of a (in radians)
+fun("abs", "a", "return Math.abs(a)") // returns the absolute value of a
+fun("ceil", "a", "return Math.ceil(a)") // rounds up a to the nearest integer
+fun("floor", "a", "return Math.floor(a)") // rounds down a to the nearest integer
+fun("min", "a", "b", "return Math.min(a, b)") // returns the smaller of a and b
+fun("max", "a", "b", "return Math.max(a, b)") // returns the larger of a and b
+fun("log", "a", "return Math.log(a)") // returns the natural logarithm of a
+fun("exp", "a", "return Math.exp(a)") // returns e raised to the power of a
+fun("floorDiv", "a", "b", "return Math.floor(a / b)") // returns the largest integer less than or equal to a / b
+fun("floorMod", "a", "b", "return (a % b + b) % b") // returns the remainder of a / b as a positive integer
